@@ -1,86 +1,139 @@
 body {
-    background-color: hsl(104, 29%, 90%);
-    margin-top: 20px;
-    padding: 20px;
-}
+    margin: 0;
+    padding: 0;
+    background-color: #e2edde;
+  }
 
 h1 {
-    font-family: PT Sans,sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-weight: bold;
     font-size: 43pt;
 }
 
 h2 {
-    font-family: PT Sans, sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-weight: bold;
     font-size: 24pt;
 }
 
 h3 {
-    font-family: Font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype, Palatino, serif;
+    font-family:'PT Serif', serif;
     font-weight: bold;
     font-size: 16pt;
 }
 
 p {
-    font-family: Font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype, Palatino, serif;
+    font-family:'PT Serif', serif;
     font-size: 16pt;
 }
 
-header {
+
+/*****LANDING PAGE*****/
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
 }
 
+.container .section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 
-a {
-    display: inline;
-    font-family: PT Sans, sans-serif;
+.container .section:nth-child(1) {
+    background: url("images/durkin_landing_01.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container .section:nth-child(2) {
+    background: url("images/durkin_landing_02.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container .section:nth-child(3) {
+    background: url("images/durkin_landing_03.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    display:flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding: 0;
+}
+
+li a {
+    font-family: 'PT Sans', sans-serif;
     font-size: 25px;
     font-weight: bold;
-    padding: 16px;
-    text-decoration:none;
-    float: right;
-    vertical-align: text-bottom !important;
-}
-
-#whitename {
-    display: inline;
-    font-family: Exo, sans-serif;
-    font-size: 69pt;
-    color:#ffffff;
     text-decoration: none;
-    float: left;
+    padding: 0 .5em 0;
+    position: relative;
+    margin-right: 20px;
 }
 
-#greenname {
-    display: inline;
-    font-family: Exo, sans-serif;
-    font-size: 69pt;
-    color:#b5d2ad;
-    text-decoration: none;
-    float: left;
+li:first-child {
+    margin-right:auto;
+    margin-left: 0;
 }
 
-.white-nav {
-    color: #ffffff;
-    text-decoration:none;
+a:hover {
+    text-decoration: underline;
 }
 
-.green-nav {
+
+/*****WHITE NAVIGATION*****/
+.white-chen {
+    font-family: 'Exo', sans-serif;
+    font-size: 70pt;
+    color: white;
+    padding-left: .5em;
+}
+
+#white-line {
+    border-bottom: 2px solid white;
+}
+
+.white-text {
+    color: white;
+}
+
+/*****GREEN NAVIGATION*****/
+.green-chen {
+    font-family: 'Exo', sans-serif;
+    font-size: 70pt;
     color: #b5d2ad;
-    text-decoration:none;
+    padding-left: .5em;
 }
 
-hr {
-    border-width: 0;
-    width: 100%;
-    height: 2px;
-}
-.whiteline {
-    color: #ffffff;
-    background-color: #ffffff;
+#green-line {
+    border-bottom: 2px solid #b5d2ad;
 }
 
-.greenline {
+.green-text {
     color: #b5d2ad;
-    background-color: #b5d2ad;
+}
+
+
+.box-about {
+    background: #b5d2ad;
+    padding: 2em 1.5em 20em 30em;
+    margin: 5em 25% 0;
+    min-width: 600px;
+    max-width: 600px;
+}
+
+.img-about02 {
+    width:100vw;
+}
+
+.img-hobby01 {
+    width:100vw;
 }
