@@ -7,13 +7,13 @@ body {
 h1 {
     font-family: 'PT Sans', sans-serif;
     font-weight: bold;
-    font-size: 43pt;
+    font-size: 34pt;
 }
 
 h2 {
     font-family: 'PT Sans', sans-serif;
     font-weight: bold;
-    font-size: 24pt;
+    font-size: 28pt;
 }
 
 h3 {
@@ -25,10 +25,16 @@ h3 {
 p {
     font-family:'PT Serif', serif;
     font-size: 16pt;
+    margin-top: 0;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 
-/*****LANDING PAGE*****/
+/********INDEX PAGE********/
+
 .container {
     position: relative;
     width: 100%;
@@ -67,6 +73,7 @@ ul {
     justify-content: flex-end;
     align-items: baseline;
     padding: 0;
+    min-width: 600px;
 }
 
 li a {
@@ -84,12 +91,10 @@ li:first-child {
     margin-left: 0;
 }
 
-a:hover {
-    text-decoration: underline;
-}
 
 
-/*****WHITE NAVIGATION*****/
+/********WHITE NAVIGATION BAR********/
+
 .white-chen {
     font-family: 'Exo', sans-serif;
     font-size: 70pt;
@@ -105,12 +110,15 @@ a:hover {
     color: white;
 }
 
-/*****GREEN NAVIGATION*****/
+/********GREEN NAVIGATION BAR********/
+
 .green-chen {
     font-family: 'Exo', sans-serif;
     font-size: 70pt;
     color: #b5d2ad;
     padding-left: .5em;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 #green-line {
@@ -122,18 +130,103 @@ a:hover {
 }
 
 
-.box-about {
-    background: #b5d2ad;
-    padding: 2em 1.5em 20em 30em;
-    margin: 5em 25% 0;
-    min-width: 600px;
-    max-width: 600px;
+
+
+/********ABOUT PAGE********/
+
+.container-about {
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
+.container-about .card1 {
+    position: relative;
+    max-width: 1800px;
+    background: #b5d2ad;
+    margin: 20px auto;
+    padding: 30px 30px 130px 30px;
+    display: flex;
+}
+
+.container-about .card1 .imgbx {
+    max-width: 500px;
+    min-width: 400px;
+    flex: 0 0 500px;
+}
+
+.container-about .card1 .imgbx img{
+    max-width: 500px;
+}
+
+.container-about .card1 .content1 {
+    margin-left: 30px;
+}
+
+.img-about01 {
+    max-width: 500px;
+    float: left;
+    margin-right: 10px;
+    display: flex;
+}
 .img-about02 {
     width:100vw;
 }
 
-.img-hobby01 {
-    width:100vw;
+
+/********HOBBY PAGE********/
+
+.container-hobby {
+    position: relative;
+    width: 800px;
+    display: flex;
+    justify-content:;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
+
+.container-hobby .card2 {
+    position: relative;
+    width: 800px;
+    background: #b5d2ad;
+    padding: 20px 40px 40px 40px;
+    display: flex;
+    align-content: center;
+}
+
+.container-hobby .card2 .content2 {
+    align-content:center;
+    margin: 0 auto;
+    display:
+}
+
+table {
+    border-spacing: 15px;
+}
+td {
+    font-family:'PT Serif', serif;
+    font-size: 16pt;
+  }
+  
+.E {
+    padding: 0 12px 0 0 ;
+    vertical-align: text-top;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .Y {
+    padding: 0 12px 0 0 ;
+    vertical-align: text-top;
+  }
+
+  .img-hobby01 {
+    width:100vw;
+    margin-bottom: 0;
+}
+  
