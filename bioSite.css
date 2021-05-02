@@ -216,14 +216,14 @@ li:first-child {
     justify-content:;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 0 auto 40px;
 }
 
 .container-hobby .card2 {
     position: relative;
     width: 800px;
     background: #b5d2ad;
-    padding: 20px 40px 0px 40px;
+    padding: 20px 40px 20px 40px;
     display: flex;
     align-content: center;
 }
@@ -254,4 +254,12 @@ li:first-child {
 .evan {
     font-weight: bold;
     margin-top: 40px;
+}
+
+.hobby-link {
+    color: #000000;
+}
+
+.hobby-link:hover {
+    color: #f2e17e;
 }
