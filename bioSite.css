@@ -12,7 +12,7 @@ h1 {
 
 h2 {
     font-family: 'PT Sans', sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 28pt;
 }
 
@@ -66,6 +66,11 @@ a:hover {
     background-attachment: fixed;
 }
 
+.container .section .footer {
+    position: fixed;
+    bottom: 25px;
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -76,6 +81,22 @@ ul {
     min-width: 600px;
 }
 
+ul.footer {
+    list-style: none;
+    margin: 0;
+    display:flex;
+
+    align-items: baseline;
+    padding: 0;
+    min-width: 600px;
+    float: right;
+}
+
+li.footer {
+    margin-right: 0;
+}
+
+
 li a {
     font-family: 'PT Sans', sans-serif;
     font-size: 25px;
@@ -85,6 +106,7 @@ li a {
     position: relative;
     margin-right: 20px;
 }
+
 
 li:first-child {
     margin-right:auto;
@@ -106,9 +128,16 @@ li:first-child {
     border-bottom: 2px solid white;
 }
 
+#white-line-footer {
+    border-top: 2px solid white;
+    display: fixed;
+    bottom: 0;
+}
+
 .white-text {
     color: white;
 }
+
 
 /********GREEN NAVIGATION BAR********/
 
@@ -194,7 +223,7 @@ li:first-child {
     position: relative;
     width: 800px;
     background: #b5d2ad;
-    padding: 20px 40px 40px 40px;
+    padding: 20px 40px 0px 40px;
     display: flex;
     align-content: center;
 }
@@ -205,28 +234,24 @@ li:first-child {
     display:
 }
 
-table {
-    border-spacing: 15px;
-}
-td {
-    font-family:'PT Serif', serif;
-    font-size: 16pt;
-  }
-  
-.E {
-    padding: 0 12px 0 0 ;
-    vertical-align: text-top;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  
-  .Y {
-    padding: 0 12px 0 0 ;
-    vertical-align: text-top;
-  }
-
   .img-hobby01 {
     width:100vw;
     margin-bottom: 0;
 }
-  
+ 
+.img-right {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.img-left {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.evan {
+    font-weight: bold;
+    margin-top: 40px;
+}
