@@ -16,12 +16,6 @@ h2 {
     font-size: 28pt;
 }
 
-h3 {
-    font-family:'PT Serif', serif;
-    font-weight: bold;
-    font-size: 16pt;
-}
-
 p {
     font-family:'PT Serif', serif;
     font-size: 16pt;
@@ -32,14 +26,64 @@ a:hover {
     text-decoration: underline;
 }
 
+.container-img {
+    position: relative;
+    overflow: auto;
+    overflow-x: hidden;
+    display: flex;
+ }
 
-/********INDEX PAGE********/
+/********WHITE NAVIGATION BAR********/
+
+.white-chen {
+    font-family: 'Exo', sans-serif;
+    font-size: 70pt;
+    color: white;
+    padding-left: .5em;
+}
+
+#white-line {
+    border-bottom: 2px solid white;
+}
+
+.white-text {
+    color: white;
+}
+
+
+/*************GREEN NAVIGATION BAR*************/
+
+.green-chen {
+    font-family: 'Exo', sans-serif;
+    font-size: 70pt;
+    color: #b5d2ad;
+    padding-left: .5em;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#green-line {
+    border-bottom: 2px solid #b5d2ad;
+}
+
+.green-text {
+    color: #b5d2ad;
+}
+
+@media (max-width: 840px) {
+    .green-chen {
+        font-size: 40px;
+    }
+}
+
+/**************INDEX PAGE**************/
 
 .container {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: auto;
+    overflow-x: hidden;
 }
 
 .container .section {
@@ -81,22 +125,6 @@ ul {
     min-width: 600px;
 }
 
-ul.footer {
-    list-style: none;
-    margin: 0;
-    display:flex;
-
-    align-items: baseline;
-    padding: 0;
-    min-width: 600px;
-    float: right;
-}
-
-li.footer {
-    margin-right: 0;
-}
-
-
 li a {
     font-family: 'PT Sans', sans-serif;
     font-size: 25px;
@@ -114,54 +142,7 @@ li:first-child {
 }
 
 
-
-/********WHITE NAVIGATION BAR********/
-
-.white-chen {
-    font-family: 'Exo', sans-serif;
-    font-size: 70pt;
-    color: white;
-    padding-left: .5em;
-}
-
-#white-line {
-    border-bottom: 2px solid white;
-}
-
-#white-line-footer {
-    border-top: 2px solid white;
-    display: fixed;
-    bottom: 0;
-}
-
-.white-text {
-    color: white;
-}
-
-
-/********GREEN NAVIGATION BAR********/
-
-.green-chen {
-    font-family: 'Exo', sans-serif;
-    font-size: 70pt;
-    color: #b5d2ad;
-    padding-left: .5em;
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-#green-line {
-    border-bottom: 2px solid #b5d2ad;
-}
-
-.green-text {
-    color: #b5d2ad;
-}
-
-
-
-
-/********ABOUT PAGE********/
+/*************ABOUT PAGE**************/
 
 .container-about {
     position: relative;
@@ -173,27 +154,56 @@ li:first-child {
     margin: 0 auto;
 }
 
-.container-about .card1 {
+.container-about .card-about {
     position: relative;
-    max-width: 1800px;
+    max-width: 1150px;
     background: #b5d2ad;
     margin: 20px auto;
     padding: 30px 30px 130px 30px;
     display: flex;
 }
 
-.container-about .card1 .imgbx {
+.container-about .card-about .imgbx {
     max-width: 500px;
     min-width: 400px;
     flex: 0 0 500px;
 }
 
-.container-about .card1 .imgbx img{
+.container-about .card-about .imgbx img{
     max-width: 500px;
 }
 
-.container-about .card1 .content1 {
+.container-about .card-about .content-bio {
     margin-left: 30px;
+}
+
+@media (max-width: 991px)
+{
+    .container-about
+    {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-about {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 700px;
+    }
+    
+    .container-about .card-about {
+        flex-direction: column;
+        max-width: 700px;
+    }
+
+    .container-about .card-about .content-bio {
+        margin-left: 0px;
+    }
+
+    .container-about .card-about .imgbx {
+        margin: auto auto 20px auto;
+    }
 }
 
 .img-about01 {
@@ -204,10 +214,11 @@ li:first-child {
 }
 .img-about02 {
     width:100vw;
+    overflow-x: hidden !important;
 }
 
 
-/********HOBBY PAGE********/
+/**************HOBBY PAGE**************/
 
 .container-hobby {
     position: relative;
@@ -216,27 +227,29 @@ li:first-child {
     justify-content:;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0 auto 40px;
+    margin: 0 auto 40px !important;
+    overflow-x: hidden;
 }
 
-.container-hobby .card2 {
+.container-hobby .card-hobby {
     position: relative;
     width: 800px;
     background: #b5d2ad;
-    padding: 20px 40px 20px 40px;
+    padding: 0 40px;
     display: flex;
     align-content: center;
 }
 
-.container-hobby .card2 .content2 {
+.container-hobby .card-hobby .header {
     align-content:center;
-    margin: 0 auto;
+    margin: 30px auto 0;
     display:
 }
 
-  .img-hobby01 {
+.img-hobby01 {
     width:100vw;
     margin-bottom: 0;
+    overflow-x: hidden;
 }
  
 .img-right {
@@ -261,5 +274,33 @@ li:first-child {
 }
 
 .hobby-link:hover {
-    color: #f2e17e;
+    color: #efd95d;
 }
+
+/********BACK TO TOP BTN*******/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 99;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border: none;
+    outline: none;
+    background-color: #efd95d;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+  button {
+    font: 400 18px 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+  }

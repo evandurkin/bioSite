@@ -8,32 +8,58 @@
     <meta charset="uft-8">
 </head>
 
-<body class="about-body">
-    <div id="container">
+<body>
+    <div>
+    
         <div id="green-line">
             <ul>
                 <li><a href="index.html" class="green-chen">CHEN YING</a></li>
-                <li><a href="about.html" style="color: white; background-color: #f2e17e;">About</a></li>
+                <li><a href="about.html" style="color: white; background-color: #efd95d;">About</a></li>
                 <li><a href="hobby.html" class="green-text">Hobby</a></li>
             </ul>
         </div>
         
         <div class="container-about">
-            <div class="card1">
+            <div class="card-about">
                 <div class="imgbx">
-                    <img src="images/durkin_about_01.jpeg" alt="Ying Chen stands in a park. Ying is looking at the camera and wearing a dark pink colored sweater." style="max-width: 500px;">
+                    <img src="images/durkin_about_01.jpeg" alt="A young Chinese woman stands in a park. She is looking at the camera and wearing a dark pink colored sweater.">
                 </div>
-                <div class="content1">
+                <div class="content-bio">
                     <p>Ying Chen (b. 1991) was born in FuJian, China. At the age of six she moved to New York City’s Lower East Side with her mother and older sister. Chen and her family spent their early years in the states moving between New York, Florida and Georgia. During    this period, Chen found it difficult to adjust to a new language and environment. Balancing life between Manhattan's city life and the suburbs of Leesburg, Georgia was disorienting for Chen until she was able to adapt to a more mobile lifestyle.</p>
                     <p>In 2012 Chen and her family moved to Brooklyn. Chen was working towards pursuing her degree as a dental hygienist while her older and younger sisters were also completing their own studies. Chen’s mother also opened up a plant shop below their apartment when they moved back to Brooklyn. This was a family effort that everyone contributed towards to help set up and maintain the shop to its present state.</p>
-                    <p>When Chen is not polishing enamel or pruning plants she’s usually working on her next photography project, which has been a lifelong hobby. Chen’s interest in photography first started when her old sister started taking amateur pictures around the house during their childhood. Over the years, Chen’s creative pursuits with photography have evolved and she now regularly photographs friends and family. Chen also enjoys other creative media such as paint-socials with her sisters a local paint store and she also enjoys creating videos for her YouTube channel in which she provides commentary to popular Chinese drama TV shows. She’s hopes to turn her creative pursuits into a career someday, either in the US or China.</p>
+                    <p>When Chen is not polishing enamel or pruning plants she’s usually working on her next photography project, which has been a lifelong hobby. Chen’s interest in photography first started when her old sister started taking amateur pictures around the house during their childhood. Over the years, Chen’s creative pursuits with photography have evolved and she now regularly photographs friends and family. Chen also enjoys other creative media such as paint-socials with her sisters at local paint store and she also enjoys creating videos for her YouTube channel in which she provides commentary to popular Chinese drama TV shows. She’s hopes to turn her creative pursuits into a career someday, either in the US or China.</p>
                     <p>Chen currently lives in Brooklyn with her mother, two sisters and two dogs.</p>
                 </div>
             </div>
         </div>
-
-        <img src="images/durkin_about_02.jpg" alt="Ying lays on a couch smiling down at her poodle dog which is cuddled in her lap." class="img-about02">
+        <div class="container-img">
+            <img src="images/durkin_about_02.jpg" alt="A young Chinese woman lays on a couch smiling down at her poodle dog which is cuddled in her lap." class="img-about02">
+        </div>  
     </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
 </body>
 
 </html>
