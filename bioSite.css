@@ -50,6 +50,13 @@ a:hover {
     color: white;
 }
 
+@media (max-width: 840px) 
+{
+    .white-chen {
+        font-size: 40px;
+    }
+}
+
 
 /*************GREEN NAVIGATION BAR*************/
 
